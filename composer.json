@@ -1,5 +1,5 @@
 {
-    "name": "laravel/api-requests-logs",
+    "name": "codebite/api-requests-logs",
     "description": "Api request and response logs",
     "type": "library",
     "authors": [
