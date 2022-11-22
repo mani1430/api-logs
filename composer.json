@@ -1,0 +1,24 @@
+{
+    "name": "ocw/api-logs",
+    "description": "Api request and response logs",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Ajeesh",
+            "email": "ajeesh@onlinecheckwriter.com"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+          "Ocw\\ApiResponseLog\\": "src"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Ocw\\ApiResponseLog\\ApiResponseLogServiceProvider"
+            ]
+        }
+    }
+}
