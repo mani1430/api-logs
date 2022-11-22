@@ -36,7 +36,7 @@ class ApiResponseLogMiddleware
          $log                      = new ApiResponseLog();
          $log->uu_id               = $uuid;
          $log->user_id             = auth()->id();  //user id
-         $log->ip_address          = getRequestIp();
+         $log->ip_address          = $request->ip();
          $log->browser             = $request->header('user-agent');
          $log->api_type            = self::$api_type; //like apiv4
          $log->api_endpoint        = $request->path();
