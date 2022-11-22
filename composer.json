@@ -1,5 +1,5 @@
 {
-    "name": "codebite/api-requests-logs",
+    "name": "ocw/api-logs",
     "description": "Api request and response logs",
     "type": "library",
     "authors": [
