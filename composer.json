@@ -1,5 +1,5 @@
 {
-    "name": "ocw/api-logs",
+    "name": "laravel/api-logs",
     "description": "Api request and response logs",
     "type": "library",
     "authors": [
