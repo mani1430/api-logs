@@ -26,7 +26,12 @@ class ApiResponseLogServiceProvider extends ServiceProvider
      */
     public function boot(Kernel $kernel)
     {
+        $this->registerMigrations();
         $router = $this->app->make(Router::class);
         $router->aliasMiddleware('apiResponseLog',ApiResponseLogMiddleware::class);
+    }
+    
+    public function registerMigrations(){
+        $this->loadMigrationsFrom(__DIR__ . '/database/migrations');
     }
 }
